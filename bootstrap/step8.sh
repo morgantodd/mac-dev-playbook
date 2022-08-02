@@ -46,14 +46,20 @@ go get -u github.com/go-bindata/go-bindata/...
 go install github.com/jstemmer/go-junit-report@latest
 
 # get a nice git prompt in bash:
-git clone https://github.com/magicmonty/bash-git-prompt.git ~/.bash-git-prompt --depth=1
+if [[ -d ~/.bash-git-prompt ]]; then
+    cd ~/.bash-git-prompt && git pull && cd -
+else
+    git clone https://github.com/magicmonty/bash-git-prompt.git ~/.bash-git-prompt --depth=1
+fi
 
 ####################
 
 # vim
-mkdir -p ~/.vim/autoload
-pushd ~/.vim/autoload
-curl -O https://raw.githubusercontent.com/tpope/vim-pathogen/master/autoload/pathogen.vim
+if [[ ! -d ~/.vim/autoload ]]; then
+    mkdir -p ~/.vim/autoload
+    pushd ~/.vim/autoload
+    curl -O https://raw.githubusercontent.com/tpope/vim-pathogen/master/autoload/pathogen.vim
+fi
 
 if [[ -d ~/.tmux/plugins/tpm ]]; then
     cd ~/.tmux/plugins/tpm && git pull && cd -
