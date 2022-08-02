@@ -164,7 +164,7 @@ homebrew_cask_apps:
   - rar
   - rectangle
     # - slack
-  - spideroakone
+  # - spideroakone
   - wireshark
   # - vagrant
   - visual-studio-code
