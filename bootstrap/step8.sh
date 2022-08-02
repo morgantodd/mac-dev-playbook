@@ -55,4 +55,8 @@ mkdir -p ~/.vim/autoload
 pushd ~/.vim/autoload
 curl -O https://raw.githubusercontent.com/tpope/vim-pathogen/master/autoload/pathogen.vim
 
-git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
+if [[ -d ~/.tmux/plugins/tpm ]]; then
+    cd ~/.tmux/plugins/tpm && git pull && cd -
+else
+    git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
+fi
