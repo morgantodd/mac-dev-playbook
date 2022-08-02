@@ -8,6 +8,6 @@ then
   MY_DIR=$(dirname $0)
   /bin/bash -c "./${MY_DIR}/brew-installer.sh"
   echo "Setting up the path to brew"
-  echo 'eval "$(/opt/homebrew/bin/barew shellenv)"' >> ~/.bashrc
-  eval "$(/opt/homebrew/bin/barew shellenv)"
+  echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> ~/.bashrc
+  eval "$(/opt/homebrew/bin/brew shellenv)"
 fi
