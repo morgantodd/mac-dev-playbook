@@ -22,6 +22,9 @@ dockitems_remove:
 - Notes
 - Music
 - News
+- Pages
+- Numbers
+- Keynote
 dockitems_persist:
  - name: "Slack"
    path: "/Applications/Slack.app/"
