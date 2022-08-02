@@ -68,6 +68,10 @@ asdf_plugins:
     versions:
       - 1.17.5
     global: 1.17.5
+  - name: "jq"
+    versions:
+      - 1.6
+    global: 1.6
   - name: "kubectl"
     versions:
       - 1.21.6
@@ -109,7 +113,7 @@ homebrew_installed_packages:
   # - httpie
   # - hub
   # - iperf
-  - jq
+  # - jq
   # - libevent
   # - mas
   # - mcrypt
