@@ -11,13 +11,19 @@ ln -s ~/code/github/personal/dotfiles/.bash ~/
 #git config --global http.proxy http://localhost:3128
 #git config --global https.proxy http://localhost:3128
 
-
+# these are the minimum versions that are built for Apple Silicon/arm64
+VAULT_VERSION=1.8.0
+TERRAFORM_VERSION=1.0.2
+if [[ $(arch) == "i386" ]]; then
+    VAULT_VERSION=0.11.6
+    TERRAFORM_VERSION=0.11.3
+fi
 asdf plugin add vault
-asdf install vault 0.11.6
-asdf global vault 0.11.6
+asdf install vault $VAULT_VERSION
+asdf global vault $VAULT_VERSION
 asdf plugin add terraform
-asdf install terraform 0.11.3
-asdf global terraform 0.11.3
+asdf install terraform $TERRAFORM_VERSION
+asdf global terraform $TERRAFORM_VERSION
 
 asdf plugin add golangci-lint
 asdf install golangci-lint 1.43.0
