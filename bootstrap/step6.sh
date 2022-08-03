@@ -1,5 +1,8 @@
 #!/bin/bash
 
+# need to source this so we can run jq
+source $(brew --prefix asdf)/libexec/asdf.sh
+
 # source this so we can start running ansible, straight after installing it via asdf
 # note this is being done before `set -u` as an undefined $ASDF_DIR will cause the
 # script to fail
