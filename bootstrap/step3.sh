@@ -8,4 +8,3 @@ brew install --quiet asdf
 # the following are already in the dotfiles repo
 #echo -e "\n. $(brew --prefix asdf)/libexec/asdf.sh" >> ~/.bash_profile
 #echo -e "\n. $(brew --prefix asdf)/etc/bash_completion.d/asdf.bash" >> ~/.bash_profile
-source $(brew --prefix asdf)/libexec/asdf.sh
