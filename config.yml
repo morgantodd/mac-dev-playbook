@@ -57,6 +57,7 @@ dotfiles_files:
   - .osx
   - .tmux.conf
   - .vimrc
+  - .bash/proxy_on_off.sh
 
 asdf_plugins:
   - name: "ansible-base"
