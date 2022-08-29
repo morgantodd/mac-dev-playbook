@@ -1,6 +1,7 @@
 #!/bin/bash
 
 set -euo pipefail
+source ~/.bashrc
 echo "installing asdf"
 # --quiet means it won't fail the install if asdf if already installed
 brew install --quiet asdf
