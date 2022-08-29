@@ -1,5 +1,6 @@
 #!/bin/bash
 
+source ~/.bashrc
 # need to source this so we can run jq
 source $(brew --prefix asdf)/libexec/asdf.sh
 
