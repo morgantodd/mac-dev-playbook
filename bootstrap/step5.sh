@@ -1,6 +1,7 @@
 #!/bin/bash
 
 set -euo pipefail
+source ~/.bashrc
 echo "setting up ansible-base"
 
 if ! asdf plugin list | grep '^ansible-base$' > /dev/null
