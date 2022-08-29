@@ -17,6 +17,6 @@ then
   MY_DIR=$(dirname $0)
   /bin/bash -c "./${MY_DIR}/brew-installer.sh"
   echo "Setting up the path to brew"
-  echo 'eval "$(${BREW_PATH} shellenv)"' >> ~/.bashrc
+  echo "eval \"$(${BREW_PATH} shellenv)\"" >> ~/.bashrc
   eval "$(${BREW_PATH} shellenv)"
 fi
