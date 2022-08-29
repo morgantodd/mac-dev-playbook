@@ -1,6 +1,7 @@
 #!/bin/bash
 
 set -euo pipefail
+source ~/.bashrc
 echo "setting up python"
 
 if ! asdf plugin list | grep '^python$' > /dev/null
