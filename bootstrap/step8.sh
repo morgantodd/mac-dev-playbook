@@ -1,6 +1,16 @@
 
 ln -s ~/code/github/personal/dotfiles/.bash ~/
 
+if [[ $(arch) == "i386" ]]; then
+  BREW_PATH=/usr/local/bin/brew
+elif [[ $(arch) == "arm64" ]]; then
+  BREW_PATH=/opt/homebrew/bin/brew
+else
+  echo "Unknown architecture $(arch); only i386 and arm64 are supported"
+  exit 1
+fi
+
+echo "eval \"$(${BREW_PATH} shellenv)\"" >> ~/.bashrc
 source ~/.bashrc
 
 # source this so we can run asdf
