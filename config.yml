@@ -61,8 +61,8 @@ dotfiles_files:
 asdf_plugins:
   - name: "ansible-base"
     versions:
-      - 2.10.16
-    global: 2.10.16
+      - 2.10.17
+    global: 2.10.17
   - name: "direnv"
     versions:
       - 2.30.2
@@ -93,8 +93,8 @@ asdf_plugins:
     global: 3.4.2
   - name: "terraform"
     versions:
-      - 0.13.5
-    global: 0.13.5
+      - 1.0.2
+    global: 1.0.2
 
 homebrew_uninstalled_packages:
   - bash-completion
