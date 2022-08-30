@@ -1,6 +1,12 @@
 
 ln -s ~/code/github/personal/dotfiles/.bash ~/
 
+source ~/.bashrc
+
+# source this so we can run asdf
+source $(brew --prefix asdf)/libexec/asdf.sh
+
+
 # generate ssh key so I can clone from chuck
 # brew install cntlm
 # copy cntlm.conf from OneDrive
@@ -37,9 +43,6 @@ asdf global snyk latest
 
 # copy ca-certs.pem from OneDrive to /etc/ssl/certs/ca-certificates.crt
 
-
-# source this so we can run go, straight after installing it via asdf
-source $(brew --prefix asdf)/libexec/asdf.sh
 
 ####################
 # to build devlabsctl on the mac
