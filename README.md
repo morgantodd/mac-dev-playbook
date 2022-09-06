@@ -6,6 +6,20 @@
 
 This playbook installs and configures most of the software I use on my Mac for web and software development. Some things in macOS are slightly difficult to automate, so I still have a few manual installation steps, but at least it's all documented here.
 
+## TLDR - copy/paste this command into your shell to make this a one command process
+
+```
+
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)" \
+    && mkdir ~/infra_config \
+    && cd ~/infra_config \
+    && git clone https://github.com/toddlmorgan/mac-dev-playbook \
+    && cd mac-dev-playbook && bootstrap/run.sh
+
+
+```
+
+
 ## Installation
 
   1. Ensure Apple's command line tools are installed (`xcode-select --install` to launch the installer).

@@ -105,37 +105,39 @@ homebrew_installed_packages:
   # macos has an old version (3.2) of bash which does not work with kubectl completion
   - bash
   - bash-completion@2
-  # - cowsay
-  # - doxygen
-  # - gettext
-  # - gifsicle
-  # - git
-  # - github/gh/gh
-  # - go
+  - bat
+  - btop
+  - cntlm
+  - entr
+  - exa
+  - fzf
   - gpg
-  # - httpie
-  # - hub
-  # - iperf
-  # - jq
-  # - libevent
-  # - mas
-  # - mcrypt
+  - htop
+  - neofetch
+  - httpie
+  - iperf
   - moreutils
-  # - nmap
+  - ncdu
+  - neofetch
   - openssl
-  # - php
-  # - pv
+  - pv
   #  "rcm"
   #  brew "reattach-to-user-namespace"
   - readline
-  # - ssh-copy-id
-  # - sqlite
+  - ripgrep
+  - rmlint
+  - rq
+  - services
+  - ssh-copy-id
+
   - the_silver_searcher
   - tmux
+  - tree
   # - universal-ctags
   - vim
   - watchman
   - wget
+  - zoxide
   # - wrk
   # - zsh-history-substring-search
   # for asdf
@@ -157,16 +159,29 @@ homebrew_taps:
 
 homebrew_cask_appdir: /Applications
 homebrew_cask_apps:
+  - apache-directory-studio
+  - cyberduck
+  - divvy
   - docker
   - firefox
   - google-chrome
   # - handbrake
+  - intellij-idea
+
   - iterm2
   - keyboard-maestro
+  - kdiff3
+  - keystore-explorer
   - microsoft-edge
+  - microsoft-remote-desktop
+  - omnidisksweeper
+  - postman
   - rar
   - rectangle
     # - slack
+  - stats
+  - temurin
+  - the-unarchiver
   # - spideroakone
   - wireshark
   # - vagrant
@@ -175,17 +190,17 @@ homebrew_cask_apps:
 # Apple App Store
 # See `geerlingguy.mas` role documentation for usage instructions.
 mas_installed_apps:
-  - { id: 1333542190, name: "1Password" }
+  # - { id: 1333542190, name: "1Password" }
   # - { id: 1287445660, name: "Agenda" }
   # - { id: 1121192229, name: "Better Blocker" }
-  - { id: 411643860, name: "Daisy Disk" }
+  # - { id: 411643860, name: "Daisy Disk" }
   # - { id: 1482920575, name: "DuckDuckGo Privacy Essentials" }
-  - { id: 688211836, name: "EasyRes" }
+  # - { id: 688211836, name: "EasyRes" }
   # - { id: 1463400445, name: "Ecosia" }
-  - { id: 1319778037, name: "iStat Menus" }
+  # - { id: 1319778037, name: "iStat Menus" }
   # - { id: 405399194, name: "Kindle" }
   # - { id: 926036361, name: "LastPass" }
-  - { id: 803453959, name: "Slack" }
+  # - { id: 803453959, name: "Slack" }
   # - { id: 1385985095, name: "uBlock" }
   # - { id: 1451685025, name: "WireGuard" }
 mas_upgrade_all_apps: false
