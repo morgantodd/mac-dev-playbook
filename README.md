@@ -13,7 +13,7 @@ This playbook installs and configures most of the software I use on my Mac for w
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)" \
     && mkdir ~/infra_config \
     && cd ~/infra_config \
-    && git clone https://github.com/toddlmorgan/mac-dev-playbook \
+    && git clone https://github.com/morgantodd/mac-dev-playbook \
     && cd mac-dev-playbook && bootstrap/run.sh
 
 
