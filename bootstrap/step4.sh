@@ -1,7 +1,11 @@
 #!/bin/bash
 
 set -euo pipefail
-source ~/.bashrc
+BASH_CONFIG_FILE=~/.bashrc
+if [[ -f "$BASH_CONFIG_FILE" ]]; then
+    source ~/.bashrc
+fi
+
 echo "setting up python"
 
 if ! asdf plugin list | grep '^python$' > /dev/null
