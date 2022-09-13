@@ -1,7 +1,12 @@
 #!/bin/bash
 
 set -euo pipefail
-source ~/.bashrc
+
+BASH_CONFIG_FILE=~/.bashrc
+if [[ -f "$BASH_CONFIG_FILE" ]]; then
+    source ~/.bashrc
+fi
+
 echo "installing asdf"
 # --quiet means it won't fail the install if asdf if already installed
 brew install --quiet asdf
