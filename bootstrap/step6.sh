@@ -1,6 +1,10 @@
 #!/bin/bash
 
-source ~/.bashrc
+BASH_CONFIG_FILE=~/.bashrc
+if [[ -f "$BASH_CONFIG_FILE" ]]; then
+    source ~/.bashrc
+fi
+
 # need to source this so we can run jq
 source $(brew --prefix asdf)/libexec/asdf.sh
 
