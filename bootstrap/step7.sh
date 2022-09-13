@@ -1,6 +1,10 @@
 #!/bin/bash
 
-source ~/.bashrc
+BASH_CONFIG_FILE=~/.bashrc
+if [[ -f "$BASH_CONFIG_FILE" ]]; then
+    source ~/.bashrc
+fi
+
 # source this so we can start running ansible, straight after installing it via asdf
 # note this is being done before `set -u` as an undefined $ASDF_DIR will cause the
 # script to fail
