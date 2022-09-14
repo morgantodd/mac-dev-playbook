@@ -127,7 +127,6 @@ homebrew_installed_packages:
   - ripgrep
   - rmlint
   - rq
-  - services
   - ssh-copy-id
 
   - the_silver_searcher
